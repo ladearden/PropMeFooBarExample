@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InterviewTemplate.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -17,13 +18,15 @@ namespace InterviewTemplate.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private FooBarService _fooBarService { get; set; }
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IFooBarService fooBarService)
         {
             _logger = logger;
+            _fooBarService = (FooBarService)fooBarService;
         }
 
-        [HttpGet]
+        [HttpGet("weather")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -33,6 +36,26 @@ namespace InterviewTemplate.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        
+
+        [HttpGet("{position},{input}")]
+        public IActionResult GetFooBar(int position, string input)
+        {
+            try
+            {
+                Console.WriteLine(_fooBarService.Test(position, input));
+                if (_fooBarService.Test(position, input) != "bad request" || _fooBarService.Test(position, input) != "error")
+                    return Ok();
+
+            }
+            catch(Exception e)
+            {
+                _logger.LogError(e.ToString());
+                return BadRequest();
+            }
+            return BadRequest();
         }
     }
 }

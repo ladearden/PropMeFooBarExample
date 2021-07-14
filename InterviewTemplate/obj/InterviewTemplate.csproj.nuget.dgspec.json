@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\Interviews\\InterviewTemplate\\InterviewTemplate\\InterviewTemplate.csproj": {}
+    "C:\\Users\\ladea\\Source\\Repos\\NetCoreDefaultProject\\InterviewTemplate\\InterviewTemplate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\Interviews\\InterviewTemplate\\InterviewTemplate\\InterviewTemplate.csproj": {
+    "C:\\Users\\ladea\\Source\\Repos\\NetCoreDefaultProject\\InterviewTemplate\\InterviewTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Interviews\\InterviewTemplate\\InterviewTemplate\\InterviewTemplate.csproj",
+        "projectUniqueName": "C:\\Users\\ladea\\Source\\Repos\\NetCoreDefaultProject\\InterviewTemplate\\InterviewTemplate.csproj",
         "projectName": "InterviewTemplate",
-        "projectPath": "C:\\Users\\admin\\Desktop\\Interviews\\InterviewTemplate\\InterviewTemplate\\InterviewTemplate.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\Interviews\\InterviewTemplate\\InterviewTemplate\\obj\\",
+        "projectPath": "C:\\Users\\ladea\\Source\\Repos\\NetCoreDefaultProject\\InterviewTemplate\\InterviewTemplate.csproj",
+        "packagesPath": "C:\\Users\\ladea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ladea\\Source\\Repos\\NetCoreDefaultProject\\InterviewTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ladea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,21 +42,21 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.0, )",
+              "version": "[5.0.7, )",
               "noWarn": [
                 "NU1605"
               ]
             },
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[5.0.0, )",
+              "version": "[5.0.7, )",
               "noWarn": [
                 "NU1605"
               ]
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.1.4, )"
             }
           },
           "imports": [
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
